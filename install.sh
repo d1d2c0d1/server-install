@@ -95,7 +95,7 @@ if ! [ -x "$(command -v git)" ]; then
 fi
 
 # Generate SSH Key
-ssh-keygen -t rsa -b 4096 -C "$EMAIL"
+sudo -u "$USER_NAME" ssh-keygen -t rsa -b 4096 -C "$EMAIL"
 
 # End message
 echo -e "\e[32m✔ Installation completed successfully!\e[0m"
