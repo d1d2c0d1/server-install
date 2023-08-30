@@ -27,7 +27,7 @@ Here's a rundown of what the script does:
 
 1. **Download and Execute the Script**:
 ```bash
-wget https://path-to-your-repository/install.sh && chmod +x install.sh && ./install.sh
+wget https://raw.githubusercontent.com/d1d2c0d1/server-install/main/install.sh && chmod +x install.sh && ./install.sh
 ```
 
 2. **Follow the Prompts**: The script will ask you for a username, password, and email. Make sure to provide valid inputs!
