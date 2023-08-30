@@ -46,6 +46,25 @@ After running the script, if you wish to obtain SSL certificates for your domain
 2. Add your domain configurations.
 3. Run Certbot and follow the prompts.
 
+### use Certbot
+
+1. Obtain SSL Certificates:
+Replace example.com with your domain name.
+```bash
+sudo certbot --nginx -d example.com -d www.example.com
+```
+
+2. Follow the prompts to configure SSL settings.
+3. Certbot will automatically set up the SSL certificates for your Nginx server and configure the virtual host file.
+4. Certbot will also add a renewal cron job to ensure that your certificates are automatically renewed before they expire. You can test the renewal process with:
+```bash
+sudo certbot renew --dry-run
+```
+
+Remember to replace example.com with your actual domain name. After completing these steps, your Nginx server will be configured with SSL certificates, and your website will be accessible over HTTPS.
+
+For more details and advanced configurations, refer to the [Certbot documentation](https://certbot.eff.org/docs/).
+
 ## 📝 Contribution & Feedback
 
 Feel free to fork this repository, make your changes, and submit a pull request if you think you've made improvements. Feedback is always welcome!
